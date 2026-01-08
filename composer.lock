@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d534007da1d00aa0a2473c09e0575e0c",
+    "content-hash": "c91433c03e52594218c7c1f285381f11",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2018,6 +2018,41 @@
                 }
             ],
             "time": "2025-08-22T14:27:06+00:00"
+        },
+        {
+            "name": "istvanmolitor/user",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/user",
+                "reference": "5587e024f893395279752cb072d358c780cc52d8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\User\\Providers\\UserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\User\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "User",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "kirschbaum-development/eloquent-power-joins",
@@ -10548,7 +10583,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "istvanmolitor/user": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
