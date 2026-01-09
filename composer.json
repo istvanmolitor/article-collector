@@ -16,6 +16,7 @@
         "croustibat/filament-jobs-monitor": "^3.2",
         "filament/filament": "^4.0",
         "istvanmolitor/article": "@dev",
+        "istvanmolitor/article-generator": "@dev",
         "istvanmolitor/rss-watcher": "@dev",
         "istvanmolitor/user": "@dev",
         "laravel/framework": "^12.0",

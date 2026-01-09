@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "af64212f325f6d348aa4ff22156c1ea2",
+    "content-hash": "beb6ed41451374c1265eb1a87ba07850",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2099,7 +2099,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/article",
-                "reference": "dd352e2ce4890f3c76605344a1addcdfc96f94af"
+                "reference": "9e846b03f82cfcdb1eccd277e8751729a52e4cb5"
             },
             "type": "library",
             "extra": {
@@ -2124,6 +2124,41 @@
                 }
             ],
             "description": "Article package",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/article-generator",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/article-generator",
+                "reference": "51f62fa59c72094e0c116ac93622d3bfa14c82e3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\ArticleGenerator\\Providers\\ArticleGeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\ArticleGenerator\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Article generator",
             "transport-options": {
                 "relative": true
             }
@@ -10862,6 +10897,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "istvanmolitor/article": 20,
+        "istvanmolitor/article-generator": 20,
         "istvanmolitor/rss-watcher": 20,
         "istvanmolitor/user": 20
     },

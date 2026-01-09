@@ -12,6 +12,9 @@ use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
+use Molitor\Article\Filament\Resources\ArticleGroupResource;
+use Molitor\Article\Filament\Resources\ArticleResource;
+use Molitor\Article\Filament\Resources\AuthorResource;
 use Molitor\RssWatcher\Filament\Resources\RssFeedResource;
 use Molitor\User\Filament\Resources\PermissionResource;
 use Molitor\User\Filament\Resources\UserGroupResource;
@@ -38,6 +41,9 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
             ->resources([
+                ArticleGroupResource::class,
+                AuthorResource::class,
+                ArticleResource::class,
                 RssFeedResource::class,
                 UserResource::class,
                 UserGroupResource::class,
