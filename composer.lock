@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "393162393fdfea3fbff633ccae083ad4",
+    "content-hash": "af64212f325f6d348aa4ff22156c1ea2",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2092,6 +2092,41 @@
                 }
             ],
             "time": "2025-08-22T14:27:06+00:00"
+        },
+        {
+            "name": "istvanmolitor/article",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/article",
+                "reference": "dd352e2ce4890f3c76605344a1addcdfc96f94af"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Article\\Providers\\ArticleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Article\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Article package",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "istvanmolitor/rss-watcher",
@@ -10826,6 +10861,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "istvanmolitor/article": 20,
         "istvanmolitor/rss-watcher": 20,
         "istvanmolitor/user": 20
     },
@@ -10834,6 +10870,6 @@
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
 }
