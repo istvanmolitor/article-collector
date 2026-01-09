@@ -13,6 +13,7 @@
     ],
     "require": {
         "php": "^8.2",
+        "croustibat/filament-jobs-monitor": "^3.2",
         "filament/filament": "^4.0",
         "istvanmolitor/rss-watcher": "@dev",
         "istvanmolitor/user": "@dev",

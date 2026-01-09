@@ -16,6 +16,7 @@ use Molitor\RssWatcher\Filament\Resources\RssFeedResource;
 use Molitor\User\Filament\Resources\PermissionResource;
 use Molitor\User\Filament\Resources\UserGroupResource;
 use Molitor\User\Filament\Resources\UserResource;
+use Croustibat\FilamentJobsMonitor\FilamentJobsMonitorPlugin;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
@@ -64,6 +65,9 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+            ])
+            ->plugins([
+                FilamentJobsMonitorPlugin::make(),
             ]);
     }
 }
