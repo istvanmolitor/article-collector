@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Molitor\RssWatcher\database\seeders\NewsRssSeeder;
 use Molitor\User\database\seeders\UserSeeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,7 +17,8 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $this->call([
-            UserSeeder::class
+            UserSeeder::class,
+            NewsRssSeeder::class,
         ]);
     }
 }
