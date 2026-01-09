@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "beb6ed41451374c1265eb1a87ba07850",
+    "content-hash": "38e7eca970d8b7ad1cec4fc29312c398",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -2099,7 +2099,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/article",
-                "reference": "9e846b03f82cfcdb1eccd277e8751729a52e4cb5"
+                "reference": "c91b1f7b89773e505dd4e08c1b8402705d85d0d3"
             },
             "type": "library",
             "extra": {
@@ -2134,7 +2134,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/article-generator",
-                "reference": "51f62fa59c72094e0c116ac93622d3bfa14c82e3"
+                "reference": "d52a40102bc5c49faf51de7e17c72148b06bafa0"
             },
             "type": "library",
             "extra": {
@@ -2159,6 +2159,41 @@
                 }
             ],
             "description": "Article generator",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "istvanmolitor/keyword",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/keyword",
+                "reference": "6528e4a202ac0cd5e390482ecd1008c32a133ee1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Molitor\\Keyword\\Providers\\KeywordServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Molitor\\Keyword\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Molitor István",
+                    "email": "istvanmolitor@gmail.com"
+                }
+            ],
+            "description": "Keyword management",
             "transport-options": {
                 "relative": true
             }
@@ -10898,6 +10933,7 @@
     "stability-flags": {
         "istvanmolitor/article": 20,
         "istvanmolitor/article-generator": 20,
+        "istvanmolitor/keyword": 20,
         "istvanmolitor/rss-watcher": 20,
         "istvanmolitor/user": 20
     },
@@ -10906,6 +10942,6 @@
     "platform": {
         "php": "^8.2"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
