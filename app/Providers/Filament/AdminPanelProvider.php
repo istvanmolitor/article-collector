@@ -15,6 +15,8 @@ use Filament\Widgets\FilamentInfoWidget;
 use Molitor\Article\Filament\Resources\ArticleGroupResource;
 use Molitor\Article\Filament\Resources\ArticleResource;
 use Molitor\Article\Filament\Resources\AuthorResource;
+use Molitor\TextMining\Filament\Resources\KeywordResource;
+use Molitor\TextMining\Filament\Resources\CorpusTextResource;
 use Molitor\RssWatcher\Filament\Resources\RssFeedResource;
 use Molitor\User\Filament\Resources\PermissionResource;
 use Molitor\User\Filament\Resources\UserGroupResource;
@@ -44,6 +46,8 @@ class AdminPanelProvider extends PanelProvider
                 ArticleGroupResource::class,
                 AuthorResource::class,
                 ArticleResource::class,
+                KeywordResource::class,
+                CorpusTextResource::class,
                 RssFeedResource::class,
                 UserResource::class,
                 UserGroupResource::class,

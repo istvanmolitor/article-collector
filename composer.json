@@ -19,7 +19,7 @@
         "istvanmolitor/article-generator": "@dev",
         "istvanmolitor/rss-watcher": "@dev",
         "istvanmolitor/user": "@dev",
-        "istvanmolitor/keyword": "@dev",
+        "istvanmolitor/text-mining": "@dev",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1"
     },
